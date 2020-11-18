@@ -1,5 +1,7 @@
 .calculatorWrap {
   box-shadow: 20px 20px 60px #cfd0d2, -20px -20px 60px #ffffff;
+  -webkit-box-shadow: 20px 20px 60px #cfd0d2, -20px -20px 60px #ffffff;
+  -webkit-appearance: none;
   @apply flex flex-col-reverse items-center w-full p-6 bg-gray-100 rounded-3xl;
 }
 
@@ -44,12 +46,13 @@
 
 .divider {
   box-shadow: inset 1px 1px 1.5px #cfd0d2, inset -1px -1px 1.5px #ffffff;
+  -webkit-box-shadow: inset 1px 1px 1.5px #cfd0d2, inset -1px -1px 1.5px #ffffff;
+  -webkit-appearance: none;
   @apply w-full h-1 my-8 bg-gray-100;
 }
 
 @screen lg {
   .divider {
-    box-shadow: inset 1px 1px 1.5px #cfd0d2, inset -1px -1px 1.5px #ffffff;
     @apply w-1 mx-8 bg-gray-100 h-80;
   }
 }

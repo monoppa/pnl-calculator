@@ -1,5 +1,8 @@
 .input {
   box-shadow: inset 4px 4px 6px #d2d3d4, inset -4px -4px 6px #ffffff;
+  -webkit-box-shadow: inset 4px 4px 6px #d2d3d4, inset -4px -4px 6px #ffffff;
+  -webkit-appearance: none;
+  display: block;
   @apply px-5 py-2 font-bold tracking-wide text-gray-600 bg-gray-100 rounded-xl;
 }
 

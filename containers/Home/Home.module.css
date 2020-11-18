@@ -1,0 +1,55 @@
+.calculatorWrap {
+  box-shadow: 20px 20px 60px #cfd0d2, -20px -20px 60px #ffffff;
+  @apply flex flex-col-reverse items-center w-full p-6 bg-gray-100 rounded-3xl;
+}
+
+@screen lg {
+  .calculatorWrap {
+    @apply flex flex-row items-center w-full p-8;
+  }
+}
+
+.submit {
+  color: #ffffff;
+  background: #00c6ff; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #0072ff,
+    #00c6ff
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #0072ff,
+    #00c6ff
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  @apply w-full py-3 font-medium tracking-wide uppercase shadow-lg rounded-xl;
+}
+
+.submit:focus {
+  @apply outline-none;
+}
+
+.submit:focus:active {
+  @apply transition-transform duration-75 ease-in-out transform translate-y-1;
+}
+
+.result {
+  background-image: linear-gradient(to right bottom, #0072ff, #00c6ff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  @apply text-5xl font-bold;
+}
+
+.divider {
+  box-shadow: inset 1px 1px 1.5px #cfd0d2, inset -1px -1px 1.5px #ffffff;
+  @apply w-full h-1 my-8 bg-gray-100;
+}
+
+@screen lg {
+  .divider {
+    box-shadow: inset 1px 1px 1.5px #cfd0d2, inset -1px -1px 1.5px #ffffff;
+    @apply w-1 mx-8 bg-gray-100 h-80;
+  }
+}

@@ -1,0 +1,12 @@
+.input {
+  box-shadow: inset 4px 4px 6px #d2d3d4, inset -4px -4px 6px #ffffff;
+  @apply px-5 py-2 font-bold tracking-wide text-gray-600 bg-gray-100 rounded-xl;
+}
+
+.input::placeholder {
+  @apply font-medium text-cool-gray-300;
+}
+
+.input:focus {
+  @apply outline-none;
+}

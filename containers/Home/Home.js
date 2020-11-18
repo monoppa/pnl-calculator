@@ -33,8 +33,6 @@ const Home = () => {
     setCurrentPrice(Number(e.target.value));
   };
 
-  console.log('Home -> percentGain', percentGain);
-
   return (
     <div>
       <main className='flex flex-col items-center max-w-4xl pt-24 mx-auto'>
